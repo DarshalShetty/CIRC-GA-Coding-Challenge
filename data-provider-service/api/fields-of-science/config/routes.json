@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fields-of-sciences",
+      "handler": "fields-of-science.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fields-of-sciences/count",
+      "handler": "fields-of-science.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fields-of-sciences/:id",
+      "handler": "fields-of-science.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fields-of-sciences",
+      "handler": "fields-of-science.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fields-of-sciences/:id",
+      "handler": "fields-of-science.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fields-of-sciences/:id",
+      "handler": "fields-of-science.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

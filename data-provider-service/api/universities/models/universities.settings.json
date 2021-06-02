@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "universities",
+  "info": {
+    "name": "Universities",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string"
+    },
+    "collaborators": {
+      "via": "university",
+      "collection": "collaborators"
+    }
+  }
+}

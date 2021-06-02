@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fields_of_sciences",
+  "info": {
+    "name": "Fields of Science",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "collaborators": {
+      "via": "fields_of_sciences",
+      "collection": "collaborators"
+    }
+  }
+}

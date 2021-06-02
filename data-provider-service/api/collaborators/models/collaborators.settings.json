@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "collaborators",
+  "info": {
+    "name": "Collaborators",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "abstract": {
+      "type": "text"
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Domain_and_Application",
+        "Campus"
+      ],
+      "required": true,
+      "default": "Domain_and_Application"
+    },
+    "principal_investigator": {
+      "model": "people"
+    },
+    "university": {
+      "via": "collaborators",
+      "model": "universities"
+    },
+    "sample_publications": {
+      "collection": "publications"
+    },
+    "fields_of_sciences": {
+      "via": "collaborators",
+      "collection": "fields-of-science",
+      "dominant": true
+    }
+  }
+}

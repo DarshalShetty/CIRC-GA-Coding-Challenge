@@ -1,0 +1,21 @@
+{
+  "name": "fields-of-science-ui",
+  "version": "0.0.1",
+  "description": "UI for displaying clients grouped by their fields of research",
+  "main": "scripts/build.js",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "serve": "npx serve builds -n",
+    "start": "npm run-script build && npm run-script serve"
+  },
+  "author": "Darshal Shetty",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "mustache": "^4.2.0",
+    "serve": "^11.3.2"
+  }
+}

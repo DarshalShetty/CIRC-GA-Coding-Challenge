@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "publications",
+  "info": {
+    "name": "Publications",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "book_title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "pages": {
+      "type": "string",
+      "regex": "^\\d+-\\d+$"
+    },
+    "authors": {
+      "collection": "people"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

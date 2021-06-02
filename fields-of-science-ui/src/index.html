@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fields of Science</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+      .container {
+        margin: auto;
+        width: 90%;
+      }
+    </style>
+    <script type="application/json" id="stuff">
+      {{{bars_data}}}
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>
+        Our clients are currently researching in the following fields of Science
+      </h2>
+      <svg id="bar_plot"></svg>
+      <h3>Click on any of the bars in the plot to view all clients within that field of research.</h3>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

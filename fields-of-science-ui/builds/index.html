@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fields of Science</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+      .container {
+        margin: auto;
+        width: 90%;
+      }
+    </style>
+    <script type="application/json" id="stuff">
+      [{"name":"Chemistry","collaborations":4},{"name":"Engineering","collaborations":4},{"name":"Biophysics","collaborations":2},{"name":"Materials Research","collaborations":2},{"name":"Geology Survey","collaborations":1},{"name":"Neuroscience Biology","collaborations":2},{"name":"Biology","collaborations":2},{"name":"Bio-informatics","collaborations":2},{"name":"Generic Applications","collaborations":3}]
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>
+        Our clients are currently researching in the following fields of Science
+      </h2>
+      <svg id="bar_plot"></svg>
+      <h3>Click on any of the bars in the plot to view all clients within that field of research.</h3>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/collaborators",
+      "handler": "collaborators.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/collaborators/count",
+      "handler": "collaborators.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/collaborators/:id",
+      "handler": "collaborators.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/collaborators",
+      "handler": "collaborators.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/collaborators/:id",
+      "handler": "collaborators.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/collaborators/:id",
+      "handler": "collaborators.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
