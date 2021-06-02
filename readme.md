@@ -62,7 +62,7 @@ features that allows more control over its content's data.
 This UI service groups the collaborators by their corresponding fields of
 science. As shown in the diagram above, the bar chart in the homepage
 visualizes the distribution of different fields. Clicking on one of the
-bars in the card would load the page with the list of collaborators
+bars in the chart would load the page with the list of collaborators
 working on the corresponding field as shown in the picture below.
 
 ![fields=of-science-ui-table](fields-of-science-ui-table.png)
@@ -111,7 +111,7 @@ generator Jekyll when describing this coding challenge. I didn't decide to
 use Jekyll because then I would have had to install the entire Ruby toolchain.
 Also, I used Gatsby because it used React underneath which I was familiar
 with. Since Gatsby interfaces well with GraphQL and Strapi could easily
-provide a GraphQL endpoint, I decided to it in this module. However, 
+provide a GraphQL endpoint, I decided to use it in this module. However, 
 since Gatsby and GraphQL were tools that I had very little experience
 with, I spent a lot of time debugging this module than I could like to 
-admit.
+admit. Theme-UI library was used to style and theme the React components.
